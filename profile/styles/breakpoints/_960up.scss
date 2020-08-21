@@ -1,0 +1,217 @@
+/******************************************************************
+
+Stylesheet: 960px以上のモニタで適用
+
+******************************************************************/
+.font-sm {
+  font-size: 16px;
+}
+.font-md {
+  font-size: 19px;
+}
+.font-lr {
+  font-size: 23px;
+}
+.font-lg {
+  font-size: 36px;
+}
+.mb-lg {
+  margin-bottom: 150px !important;
+}
+.pb-lg {
+  padding-bottom: 150px !important;
+}
+
+.popular {
+  &__item {
+    flex-basis: 25%;
+  }
+
+  &__img {
+    height: 335px;
+  }
+}
+
+//header 
+.header {
+  height: $navHeight;
+  & .logo {
+    font-size: 38px;
+  }
+  &__nav {
+    display: block;
+  }
+}
+
+.mobile-menu {
+  &__btn {
+    display: none;
+  }
+}
+
+//loader/top
+.pace-done #global-container {
+    .banner {
+      height: 115vh;
+      padding: 150px 50px 0;
+      flex-direction: column;
+      overflow: hidden;
+
+      &::before {
+        right: -26%;
+        transform: skewX(-25deg) translateX(89%);
+      }
+      & .textBox {
+        top: 25%;
+        left: 10%;
+        & h2{
+          font-size: 4.5em;
+        }
+        & p{
+           font-size: 1.7em;
+        }
+      }
+      & .imgBox {
+        display: none;
+      }
+      .scroll__arrow {
+        top: calc(50% - -280px);
+      }
+    }
+
+  }
+
+
+
+.profile {
+  &__img {
+    height: 400px;
+  }
+
+  // &__description {
+  //   margin-bottom: 40px;
+  // }
+  &__title {
+    &::before {
+      display: block;
+    }
+  }
+}
+
+//パンクズ
+span.post.post-post.current-item {
+  font-size: 16px;
+}
+
+//blog__single
+.entry {
+	padding: 40px 40px 12px;
+}
+
+.entry-title {
+  margin-bottom: 34px;
+  font-size: 30px;
+}
+
+
+
+.entry-body {
+  h2 {
+    font-size: 26px;
+    margin-bottom: 38px;
+    margin-top: 79px;
+    padding: 24px 20px;
+  }
+  h3 {
+    border-bottom: 3px solid $cRed;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 24px;
+    margin-top: 84px;
+    padding-bottom: 14px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    margin-top: 82px;
+    padding-left: 42px;
+    position: relative;
+  }
+  h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 27px;
+    margin-top: 60px;
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 1em;
+    margin-top: 2em;
+  }
+  th,
+  td {
+    padding: 8px 16px;
+    font-size: 1em;
+  }
+}
+
+.entry__profile-img {
+  width: 410px;
+  height: 410px;
+  margin: 0 auto;
+  img{
+    width: 410px;
+    height: 410px;
+  }
+}
+
+.entry-img {
+  width: 610px;
+  height: 320px;
+  margin: 0 auto;
+  img{
+    width: 610px;
+    height: 320px;
+  }
+}
+
+
+
+
+.skills {
+  &__inner {
+    & .colum1,
+    .colum2,
+    .colum3,
+    .colum4 {
+      grid-template-columns: repeat(3, 1fr);
+      padding: 2rem 0rem;
+    }
+  }
+}
+
+.contact {
+ 
+  &.confirm {
+      height: 65vh;
+
+    }
+}
+
+.footer {
+  &__li {
+    justify-content: flex-start;
+  }
+}
+
+
+
+.swiper-slide {
+  box-shadow: 0 8px 40px -10px rgba(186, 3, 3, 0.8);
+}

@@ -1,0 +1,32 @@
+/******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+
+
+.colum1, .colum2, .colum3, .colum4 {
+    grid-template-columns: 1fr;
+}
+
+
+//loader/top
+
+.pace-done #global-container {
+    & .banner {
+      & .textBox {
+          top:-5%;
+        left: 0%;
+        & h2 {
+          font-size: 2em;
+        }
+        & p {
+          font-size: 0.8em;
+        }
+        .scroll__arrow {
+          top: calc(50% - -65px);
+        }
+      }
+  
+  }
+  }

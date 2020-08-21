@@ -1,0 +1,159 @@
+/******************************************************************
+
+Stylesheet: 1280px以上のモニタで適用
+
+******************************************************************/
+
+
+//header
+
+
+
+
+
+//loading/top
+.pace-done #global-container {
+  & .banner {
+    position: relative;
+    width: 100%;
+    height: 130vh;
+    padding: 0 100px;
+    // background: #111;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+
+    &::before {
+      right: -55px;
+    }
+
+    & .textBox {
+      top: 20%;
+      left: 12%;
+      & h2 {
+        font-size: 5em;
+      }
+
+      & p {
+        font-size: 1.7em;
+      }
+    }
+
+    & .imgBox {
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 800px;
+      right: -22%;
+      top: -5%;
+      
+      & img {
+        filter: drop-shadow(2px 4px 6px black);
+        position: absolute;
+        z-index: 10;
+        opacity: 0;
+
+        @include animation(
+          $name: fadeIn,
+          $duration: 3s,
+          $delay: 0.5s,
+          $timing-function: cubic-bezier(0.42, 0, 0.15, 1.01),
+          $iteration-count: 1,
+          $fill-mode: forwards
+        );
+      }
+    }
+    .scroll__arrow {
+      top: calc(50% - -225px);
+    }
+  }
+}
+
+
+
+
+
+
+//profile
+.profile {
+  &__inner {
+    padding: 50px 150px;
+  }
+}
+
+//blog
+.blog__category-list {
+  margin-right: 1.4em;
+  font-size: 1em;
+}
+
+.blog__item {
+  width: calc(25% - 30px * 3 / 4);
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 15px #60606029;
+  
+  &:nth-child(2n) {
+      margin-right: 30px;
+  }
+  &:nth-child(3n) {
+    margin-right: 30px;
+}
+
+  &:nth-child(4n) {
+    margin-right: 0;
+}
+
+}
+
+
+
+.blog__media{
+  min-height: 650px;
+}
+
+.popular {
+  &__item {
+    flex-basis: 23%;
+  }
+}
+
+
+
+
+.footer {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__ul-sns{
+    display: flex;
+    justify-content: space-around;
+  }
+  &__li-sns {
+    margin-right: 40px;
+  }
+}
+
+
+.side {
+  display: block;
+  //js レスポンシブto-top
+  &-sp{
+    display: none;
+  }
+}
+
+//modal
+.popup {
+  &__inner {}
+  &__text{
+    font-size: 1.7em;
+    right: 33%;
+    bottom: 33%;
+  }
+}
